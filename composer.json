@@ -1,0 +1,34 @@
+{
+  "name": "layershifter/domain-extract",
+  "type": "library",
+  "minimum-stability": "stable",
+  "license": "Apache-2.0",
+  "require": {
+    "php": "^7.3 || ^8.0",
+    "symfony/polyfill-intl-idn": "^1.10",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpmd/phpmd": "@stable",
+    "phpunit/phpunit": "^8.5",
+    "squizlabs/php_codesniffer": "*"
+  },
+  "autoload": {
+    "files": [
+      "src/static.php",
+      "src/Database/Resources/database.php"
+    ],
+      "psr-4": {
+          "DomainExtractor\\src\\": "src/"
+      }
+  },
+    "autoload-dev": {
+        "psr-4": {
+            "DomainExtractor\\Tests\\": "tests/"
+        }
+    },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
