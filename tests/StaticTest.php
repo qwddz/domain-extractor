@@ -16,12 +16,12 @@ class StaticTest extends TestCase
      */
     public function testExtract()
     {
-        $result = tld_extract('http://www.domain.com');
+        $result = top_level_domain_extract('http://www.domain.com');
 
         static::assertEquals('www.domain.com', $result->getFullHost());
         static::assertEquals('domain.com', $result->getRegistrableDomain());
 
-        $result = tld_extract('a.b.blogspot.com', Extract::MODE_ALLOW_ICANN);
+        $result = top_level_domain_extract('a.b.blogspot.com', Extract::MODE_ALLOW_ICANN);
 
         static::assertEquals('a.b.blogspot.com', $result->getFullHost());
         static::assertEquals('blogspot.com', $result->getRegistrableDomain());

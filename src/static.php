@@ -11,7 +11,7 @@ namespace {
      * @throws StoreException
      * @throws \DomainExtractor\src\Exceptions\RuntimeException
      */
-    function tld_extract(string $url, int $mode = null): ResultInterface
+    function top_level_domain_extract(string $url, int $mode = null): ResultInterface
     {
         static $extract = null;
 
