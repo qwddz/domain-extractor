@@ -45,9 +45,9 @@ interface ResultInterface
     /**
      * Method that returns full host record.
      *
-     * @return string
+     * @return null|string
      */
-    public function getFullHost(): string;
+    public function getFullHost(): ?string;
 
     /**
      * Returns registrable domain or null.

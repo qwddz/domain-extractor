@@ -97,9 +97,9 @@ class Result implements ArrayAccess, ResultInterface
     /**
      * Method that returns full host record.
      *
-     * @return string
+     * @return null|string
      */
-    public function getFullHost(): string
+    public function getFullHost(): ?string
     {
         // Case 1: Host hasn't suffix, possibly IP.
 
