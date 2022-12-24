@@ -3,7 +3,7 @@
 Via Composer
 
 ``` bash
-$ composer require layershifter/tld-extract
+$ composer require qwddz/domain-extractor
 ```
 ## Usage
 
